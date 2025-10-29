@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import logo from '../public/logo.png';
+import Image from "next/image";
+import logo from "../public/logo.png";
 
 export default function Footer() {
   return (
@@ -23,19 +23,37 @@ export default function Footer() {
         <div className="flex flex-col space-y-2">
           <h4 className="text-2xl font-garamond mb-4">Contact Details</h4>
           <address className="not-italic text-lg">
-            23 Omoba Olukolu Street,<br />
-            Igbo-Efon, Eti-Osa LGA,<br />
+            34 Oduduwa Way,
+            <br />
+            GRA, Ikeja,
+            <br />
             Lagos, Nigeria.
           </address>
-          <p className="mt-4 text-lg">Phone: <a href="tel:+2348055438457" className="hover:underline">+234 805 543 8457</a></p>
-          <p className="text-lg">Email: <a href="mailto:attorney@mesonanjor.com" className="hover:underline">attorney@mesonanjor.com</a></p>
+          <p className="mt-4 text-lg">
+            Phone:{" "}
+            <a href="tel:+2347048828395" className="hover:underline">
+              +234 704 8828395
+            </a>
+            <a href="tel:+2348033818650" className="hover:underline">
+              +234 803 3818650
+            </a>
+          </p>
+          <p className="text-lg">
+            Email:{" "}
+            <a
+              href="mailto:attorney@mesonanjor.com"
+              className="hover:underline"
+            >
+              attorney@mesonanjor.com
+            </a>
+          </p>
         </div>
 
         {/* Office Hours */}
         <div className="flex flex-col space-y-2">
           <h4 className="text-2xl font-garamond mb-4">Office Hours</h4>
           <div className="text-lg">
-            <p>Monday to Friday: 9:00 AM – 6:00 PM</p>
+            <p>Monday to Friday: 8:00 AM – 5:30 PM</p>
             <p>Saturday: Closed</p>
             <p>Sunday: Closed</p>
           </div>
@@ -49,13 +67,25 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-garamond mb-4 md:mb-2">Follow Us</h4>
             <div className="flex justify-center md:justify-start space-x-6 text-2xl">
-              <a href="#" aria-label="Facebook" className="hover:text-gray-300 focus:text-gray-300">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="hover:text-gray-300 focus:text-gray-300"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" aria-label="Twitter" className="hover:text-gray-300 focus:text-gray-300">
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="hover:text-gray-300 focus:text-gray-300"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" aria-label="Instagram" className="hover:text-gray-300 focus:text-gray-300">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="hover:text-gray-300 focus:text-gray-300"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
@@ -63,7 +93,8 @@ export default function Footer() {
 
           {/* Accessibility Note */}
           <p className="mt-6 md:mt-0 text-xs text-gray-300 max-w-sm">
-            We are an accessible workplace. Persons with disabilities are welcome to apply.
+            We are an accessible workplace. Persons with disabilities are
+            welcome to apply.
           </p>
         </div>
       </div>

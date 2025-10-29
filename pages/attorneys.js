@@ -1,23 +1,34 @@
-import React from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import Layout from '../components/Layout'
-
+import React from "react";
+import Head from "next/head";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Layout from "../components/Layout";
 
 const attorneys = [
-	{
-		name: "Saheed Sanni Esq",
-		title: "Founding Partner",
-		// bio: 'Sophia has over 20 years of experience in corporate law, specializing in mergers and acquisitions.',
-		image: "/owner.png",
-	},
-	{
-		name: "Ebuzhafe Annora Ogunsanya",
-		title: "Managing Partner",
-		// bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
-		image: "/lawyer.png",
-	},
+  {
+    name: "Matthew Echezonam Esonanjor, SAN",
+    title: "Principal Counsel",
+    // bio: 'Sophia has over 20 years of experience in corporate law, specializing in mergers and acquisitions.',
+    image: "/owner.png"
+  },
+  {
+    name: "Chibuzor Ekechukwu",
+    title: "Senior Counsel",
+    // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
+    image: "/lawyer.png"
+  },
+  {
+    name: "Chidiogo Ekwosimba",
+    title: "Senior Counsel",
+    // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
+    image: "/lawyer.png"
+  },
+  {
+    name: "Anietimfon George",
+    title: "Senior Counsel",
+    // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
+    image: "/lawyer.png"
+  }
 ];
 
 const cardVariants = {
@@ -28,17 +39,17 @@ const cardVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.6,
-      ease: 'easeOut',
-    },
-  }),
-}
+      ease: "easeOut"
+    }
+  })
+};
 
 const Attorneys = () => {
   return (
-    <Layout >
+    <Layout>
       <div className="bg-gray-100 min-h-screen py-20 px-4">
         <Head>
-          <title>Honoredge Legal Practice | Attorneys</title>
+          <title> M.E ESONANJOR and Company | Attorneys</title>
         </Head>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -47,12 +58,13 @@ const Attorneys = () => {
               Meet Our Attorneys
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A team of passionate legal professionals committed to excellence and justice.
+              A team of passionate legal professionals committed to excellence
+              and justice.
             </p>
           </div>
 
           {/* Attorney Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 px-6 lg:px-60">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {attorneys.map((attorney, i) => (
               <motion.div
                 key={attorney.name}
@@ -63,17 +75,21 @@ const Attorneys = () => {
                 viewport={{ once: true }}
                 variants={cardVariants}
               >
-                <div className="h-96 relative">
+                <div className="relative w-full aspect-square max-w-sm mx-auto overflow-hidden rounded-2xl">
                   <Image
                     src={attorney.image}
                     alt={attorney.name}
                     fill
-                    className="object-fit object-top w-full h-fit"
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold font-garamond text-gray-900">{attorney.name}</h3>
-                  <p className="text-sm text-primary-200 mt-1 italic">{attorney.title}</p>
+                  <h3 className="text-xl font-semibold font-garamond text-gray-900">
+                    {attorney.name}
+                  </h3>
+                  <p className="text-sm text-primary-200 mt-1 italic">
+                    {attorney.title}
+                  </p>
                   {/* <p className="text-gray-600 mt-4 text-sm">{attorney.bio}</p> */}
                 </div>
               </motion.div>
@@ -82,7 +98,7 @@ const Attorneys = () => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Attorneys
+export default Attorneys;

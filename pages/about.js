@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image"; 
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
 
@@ -10,8 +10,8 @@ const slideUp = {
   visible: (i = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.15, duration: 0.6, ease: 'easeOut' },
-  }),
+    transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" }
+  })
 };
 
 const scaleIn = {
@@ -19,32 +19,47 @@ const scaleIn = {
   visible: (i = 1) => ({
     opacity: 1,
     scale: 1,
-    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' },
-  }),
+    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" }
+  })
 };
 
 export default function AboutUs() {
   const focusAreas = [
     {
-      title: 'Immigration',
+      title: "Corporate Law",
       description:
-        'We provide comprehensive legal support for individuals and businesses navigating immigration processes, visa applications, residency, and citizenship matters.',
+        "We provide legal support for businesses, covering everything from entity formation, corporate governance, regulatory compliance, commercial contracts, and transactional advisory to ensure sustained growth and operational legality."
     },
     {
-      title: 'Corporate & Commercial Law',
+      title: "Civil Litigation",
       description:
-        'Our firm guides businesses through regulatory compliance, M&A transactions, governance, and commercial contracts, ensuring sustainable growth and legal assurance.',
+        "We offer rigorous and experienced representation in the courtroom, handling complex commercial disputes, contract breaches, debt recovery, and other civil claims across all levels of the Nigerian judicial system."
     },
     {
-      title: 'Human Rights & Social Justice',
+      title: "Criminal Law",
       description:
-        'We advocate for individuals facing discrimination, injustice, or human rights violations, ensuring their voices are heard and rights protected.',
+        "We provide robust defense and representation for individuals and corporate clients facing regulatory offenses, and other serious criminal charges, ensuring the protection of constitutional rights and due process throughout the judicial process."
     },
     {
-      title: 'Real Estate & Construction Law',
+      title: "Family Law",
       description:
-        'We provide legal expertise in property transactions, leasing, development, and land disputes, ensuring compliance and protecting your investments.',
+        "We provide sensitive and expert counsel on domestic legal matters, including divorce proceedings, custody disputes, adoption, and the preparation of prenuptial and postnuptial agreements."
     },
+    {
+      title: "Real Estate",
+      description:
+        "Our services encompass all aspects of property transactions, including land acquisition, perfection of titles, property due diligence, leasing, and the resolution of intricate land and boundary disputes."
+    },
+    {
+      title: "Tax and Finance",
+      description:
+        "We advise clients on optimizing their tax obligations, structuring financial transactions, ensuring regulatory compliance with fiscal authorities, and providing legal support for project finance and capital market activities."
+    },
+    {
+      title: "Alternative Dispute Resolution (ADR)",
+      description:
+        "We guide clients through non-litigious methods of conflict resolution, specializing in negotiation, mediation, and arbitration to achieve timely, confidential, and cost-effective settlements."
+    }
   ];
 
   return (
@@ -55,7 +70,6 @@ export default function AboutUs() {
         </Head>
 
         <div className="max-w-7xl mx-auto space-y-24">
-
           {/* Hero Section */}
           <motion.section
             initial="hidden"
@@ -65,10 +79,10 @@ export default function AboutUs() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 font-garamond">
-              About Honoredge Legal Practice
+              About M.E ESONANJOR and Company
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-              More than a law firm — we are passionate advocates driven by excellence, innovation, and justice.
+              WHERE LEGAL STRATEGY IS PRECISION-BUILT.
             </p>
           </motion.section>
 
@@ -77,18 +91,18 @@ export default function AboutUs() {
             {[
               {
                 title: "Our Mission",
-                text: "We are committed to delivering innovative, client-focused legal solutions, grounded in integrity and excellence.",
-                image: "/mission.png",
+                text: "To serve as the trusted provider of legal services for businesses, individuals and beyond, upholding a long-standing tradition of excellence, integrity, and client-focused advocacy. We are dedicated to providing clear, practical, and highly effective legal solutions across corporate, civil/criminal litigation, and property law, ensuring that our clients' interests are protected and their goals achieved with the highest professional standards.",
+                image: "/mission.png"
               },
               {
                 title: "Our Vision",
-                text: "To redefine the legal landscape by empowering individuals and businesses through exceptional advocacy and trusted counsel.",
-                image: "/vision.png",
+                text: "The enduring success of M.E. Esonanjor and Company over nearly three decades is fundamentally rooted in a commitment to core values that dictate our professional conduct and client strategy. We radiate excellence through rigorous analysis and meticulous preparation in every matter. Our practice is non-negotiably founded on Integrity, ensuring ethical standards, transparency, and honesty in all our dealings. We embody diligence, approaching every file with the necessary thoroughness and tireless effort to meet client objectives efficiently. Our core value of Client Focus drives us to build trust-based relationships, providing practical, accessible advice, and offering tenacious Advocacy to secure our clients' rights and interests.",
+                image: "/vision.png"
               },
               {
                 title: "Our Values",
                 text: "Integrity, diligence, excellence, empathy, and innovation are the core principles that guide every aspect of our practice.",
-                image: "/values.png",
+                image: "/values.png"
               }
             ].map((item, i) => (
               <motion.div
@@ -101,10 +115,17 @@ export default function AboutUs() {
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow"
               >
                 <div className="h-52 relative">
-                  <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">{item.title}</h3>
+                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+                    {item.title}
+                  </h3>
                   <p className="text-sm text-gray-600">{item.text}</p>
                 </div>
               </motion.div>
@@ -124,7 +145,12 @@ export default function AboutUs() {
             </h2>
 
             <div className="h-72 w-full relative rounded-2xl overflow-hidden shadow-md mb-14">
-              <Image src="/focus.png" alt="Our Practice Areas" fill className="object-cover" />
+              <Image
+                src="/focus.png"
+                alt="Our Practice Areas"
+                fill
+                className="object-cover"
+              />
             </div>
 
             <div className="grid md:grid-cols-2 gap-10">
@@ -138,13 +164,16 @@ export default function AboutUs() {
                   variants={scaleIn}
                   className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
                 >
-                  <h4 className="text-xl font-bold text-primary-300">{area.title}</h4>
-                  <p className="mt-2 text-sm text-gray-700">{area.description}</p>
+                  <h4 className="text-xl font-bold text-primary-300">
+                    {area.title}
+                  </h4>
+                  <p className="mt-2 text-sm text-gray-700">
+                    {area.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
           </motion.section>
-
         </div>
       </div>
     </Layout>
