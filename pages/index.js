@@ -102,7 +102,7 @@ export default function Home() {
               className="object-cover object-center z-0"
             />
             <div className="absolute inset-0 bg-black bg-opacity-60 z-10 flex flex-col items-center justify-center text-center text-white px-4">
-              <h1 className="text-5xl md:text-6xl font-garamond font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-6xl font-garamond font-bold mb-6 leading-tight uppercase">
                 M.E ESONANJOR and Company
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
@@ -118,21 +118,21 @@ export default function Home() {
           </section>
 
           {/* About Section */}
-          <section id="about" className="py-24 bg-gray-50 px-6">
+          <section id="about" className="py-24 bg-gray-900 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="flex justify-center">
+              <div className="">
                 <Image
                   src="/logo.png"
-                  alt="Honoredge Logo"
+                  alt="M.E ESONANJOR and Company logo"
                   width={200}
                   height={200}
                 />
               </div>
               <div>
-                <h2 className="text-4xl font-garamond font-bold mb-4">
+                <h2 className="text-4xl font-garamond font-bold mb-4 text-white">
                   About Us
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg leading-relaxed text-white text-justify">
                   At M.E ESONANJOR and Company, We are dedicated to providing
                   clear, practical, and highly effective legal solutions across
                   corporate, civil/criminal litigation, and property law,
@@ -308,7 +308,7 @@ export default function Home() {
               can support your legal journey.
             </p>
             <a
-              href="mailto:honoredgelp@gmail.com"
+              href="mailto:attorney@mesonanjor.com"
               className="bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300"
             >
               Contact Us
