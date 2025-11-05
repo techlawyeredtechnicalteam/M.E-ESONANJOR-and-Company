@@ -15,19 +15,19 @@ const attorneys = [
     name: "Chibuzor Ekechukwu",
     title: "Senior Counsel",
     // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
-    image: "/lawyer.png"
+    image: "/avatar.png"
   },
   {
     name: "Chidiogo Ekwosimba",
     title: "Senior Counsel",
     // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
-    image: "/lawyer.png"
+    image: "/avatar.png"
   },
   {
     name: "Anietimfon George",
     title: "Senior Counsel",
     // bio: 'James represents clients in complex civil litigation and arbitration across multiple jurisdictions.',
-    image: "/lawyer.png"
+    image: "/avatar.png"
   }
 ];
 
