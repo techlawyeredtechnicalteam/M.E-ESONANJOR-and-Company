@@ -3,7 +3,6 @@
 import { StarIcon } from "@heroicons/react/24/solid";
 import Layout from "../components/Layout";
 import Image from "next/image";
-
 import { useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
@@ -160,14 +159,7 @@ export default function Home() {
               >
                 Schedule a Consultation
               </a>
-            </div>
-            {/* <Image
-              src="/hero.png"
-              alt="Honoredge Legal Practice Hero Image"
-              fill
-              priority
-              className="object-cover object-center z-0"
-            /> */}
+            </div>           
           </section>
 
           {/* About Section */}
