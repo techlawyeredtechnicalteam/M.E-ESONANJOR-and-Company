@@ -32,11 +32,11 @@ export default function Footer() {
           <p className="mt-4 text-lg">
             Phone:{" "}
             <a href="tel:+2347048828395" className="hover:underline">
-              +234 704 8828395
+              +234 704 882 8395
             </a>
             <br />
             <a href="tel:+2348033818650" className="hover:underline">
-              +234 803 3818650
+              +234 803 381 8650
             </a>
           </p>
           <p className="text-lg">
