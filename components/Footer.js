@@ -63,7 +63,7 @@ export default function Footer() {
 
       {/* Bottom Section: Socials and Accessibility */}
       <div className="max-w-7xl mx-auto mt-12 border-t border-gray-500 pt-8 text-center md:text-left">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-center">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           {/* Social Links */}
           <div>
             <h4 className="text-xl font-garamond mb-4 md:mb-2">Follow Us</h4>
@@ -90,6 +90,12 @@ export default function Footer() {
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
+          </div>
+
+          {/* copyright reserved */}
+          <div className="mt-6 md:mt-0 text-sm ">
+            &copy; {new Date().getFullYear()} M.E ESONANJOR AND COMPANY. All
+            rights reserved.
           </div>
         </div>
       </div>
