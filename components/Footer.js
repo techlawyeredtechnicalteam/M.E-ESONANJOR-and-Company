@@ -76,11 +76,11 @@ export default function Footer() {
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a
-                href="#"
-                aria-label="Twitter"
+                href="https://www.linkedin.com/in/m-e-esonanjor-and-company-1b4035390"
+                aria-label="LinkedIn"
                 className="hover:text-gray-300 focus:text-gray-300"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-fa-linkedin"></i>
               </a>
               <a
                 href="https://www.instagram.com/m.e_esonanjor.co?igsh=cnExdW1waTJlYmxk&utm_source=qr"
