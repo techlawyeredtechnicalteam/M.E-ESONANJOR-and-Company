@@ -80,7 +80,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
                 className="hover:text-gray-300 focus:text-gray-300"
               >
-                <i className="fab fa-fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
               <a
                 href="https://www.instagram.com/m.e_esonanjor.co?igsh=cnExdW1waTJlYmxk&utm_source=qr"
