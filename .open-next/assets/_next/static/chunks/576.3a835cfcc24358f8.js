@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[576],{6576:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});var n=a(7876);a(4232);var t=a(8928);function c(e){let{date:s}=e;return(0,n.jsxs)("span",{className:"flex items-center space-x-1",children:[(0,n.jsx)(t.bfZ,{}),(0,n.jsx)("span",{children:new Date(s).toLocaleDateString()})]})}}}]);
